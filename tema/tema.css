@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans);
+
+body{
+font-family: 'Open Sans', sans-serif;
+font-size: 0.9em;
+background-color: #F5F6F7;
+margin: 0;
+padding: 0;
+font-weight: 300;
+}
+
+/* HEADINGS/PARAGRAF/LISTOR osv*/
+h1,h2,h3,h4,h5,h6{
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+margin-bottom: 2%;
+}
+
+h1{font-size: 1.8em;}
+h2{font-size: 1.6em;}
+h3{font-size: 1.4em;}
+h4{font-size: 1.4em;}
+h5{font-size: 1.4em;}
+h6{font-size: 1.4em;}
+
+a{
+-webkit-transition: all 300ms ease;
+-moz-transition: all 300ms ease;
+-ms-transition: all 300ms ease;
+-o-transition: all 300ms ease;
+transition: all 300ms ease;
+}
+
+p{
+line-height: 220%;
+margin-bottom: 6%;
+color: rgba(0, 0, 0, 0.67);
+font-size: 1.1em;
+font-weight: 300;
+}
+
+ul{list-style-type: none;}
+
+/* STYLING */
+.box{padding-top: 3%; padding-bottom: 3%;}
+.one{}
+.two{background-color: #fff;}
+.three{}
+.four{}
+
+::-moz-selection { /* Code for Firefox */
+color: #fff;
+background: #000;
+}
+
+::selection {
+color: #fff; 
+background: #000;
+}
+
+/* INNEHÅLL */
+.tophead{
+position: relative;
+background-color: #2e85c7;
+padding-top: 190px;
+padding-bottom: 100px;
+}
+
+.middle{
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+padding-bottom: 1.8%;
+margin-bottom: 1.8%;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+font-size: 3.5em;
+color: #fff;
+}
+
+.middlesmall{
+font-family: 'Montserrat', sans-serif;
+font-weight: 300;
+font-size: 1.2em;
+color: rgba(255, 255, 255, 0.55);
+}
+
+.container{
+position: relative;
+margin: 0 auto;
+width: 88%;
+max-width: 960px;
+}
+
+.content{margin-top: 60px; margin-bottom: 60px;}
+
+footer{
+padding-top: 3%;
+padding-bottom: 3%;
+color: #fff;
+background-color: #103047;
+}
+
+/* CARDS */
+
+.trigger{
+width:100%;
+height:400px;
+background-color:white; 
+}
+
+.hover-img, hover-img.hover_effect  {
+background-color:white;
+position: relative;
+width: 200px;
+height: 200px;
+text-align: center;
+font-size: 0;
+-webkit-user-select: none;
+-webkit-touch-callout: none; 
+border-style: solid;
+border-width: 1px;
+border-color: #4595ff;
+}
+
+#container{
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:nowrap;
+}
+
+.column{
+float: left;
+width: auto;
+font-size: 12px;
+}
+
+
+/* HEADER OCH MENY */
+#header {
+z-index: 2;
+position: fixed;
+width: 100%;
+height: 90px;
+line-height: 60px;
+background-color: rgba(0, 0, 0, 0.75);
+color: #fff;
+}
+
+#header h1 {
+font-size: 1.65em;
+font-weight: 400;
+letter-spacing: 3px;
+position: absolute;
+top: 0;
+left: 0;
+text-transform: uppercase;
+}
+
+.bold{font-weight: 700;}
+
+#nav {
+font-family: 'Montserrat', sans-serif;
+font-weight: 300;
+font-size: 1.1em;
+position: absolute;
+right: 0;
+}
+
+#nav ul li {
+float: left;
+}
+
+#nav ul li a {
+display: block;
+color: rgba(255, 255, 255, 0.56);
+text-decoration: none;
+padding: 0px 30px;
+}
+
+#nav ul li a:hover{
+color: #fff;
+}
+
+
+/* SKÄRMANPASSNING */
+@media (max-width: 799px) {
+
+.tophead{
+position: relative;
+padding-top: 120px;
+padding-bottom: 30px;
+}
+
+.middle{font-size: 2em; margin-bottom: 3%; padding-bottom: 3%; line-height: 150%;}
+.middlesmall{font-size: 1.2em; line-height: 150%;}
+
+#header .container {width: 100%;}
+#header h1 {left: 6%;}
+#nav {width: 100%;top: 74px;}
+
+#nav:before {
+font-size: 36px;
+content: '\2630';
+display: block;
+position: absolute;
+right: 6%;
+top: -60px;
+cursor: pointer;
+}
+
+#nav ul {background-color: rgba(0, 0, 0, 0.75); width: 100%; padding: 0;}
+#nav ul li {float: none;}
+#nav ul li a {color: #fff; padding: 30px 6%; line-height: 20px; border-top: 1px solid rgba(221, 221, 221, 0.11);}
+#nav ul li a:hover{color: #555;}
+#nav ul {
+transition: 350ms;
+-moz-transition: 350ms;
+-webkit-transition: 350ms;
+transform: perspective(600) rotate3d(0, 0, 0, 0);
+-moz-transform: perspective(600) rotate3d(0, 0, 0, 0);
+-webkit-transform: perspective(600) rotate3d(1, 0, 0, -90deg);
+transform-origin: 50% 0;
+-moz-transform-origin: 50% 0;
+-webkit-transform-origin: 50% 0;
+}
+
+#nav.open ul {
+transform: translateY(0px);
+-moz-transform: translateY(0px);
+-webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
+}
+
+}
