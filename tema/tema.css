@@ -3,23 +3,6 @@
 html{
 }
 
-/*-----------------------------------
-      clearfix
-----------------------------------*/
-
-.clearfix:before,.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    zoom: 1;
-}
-
 body{
 font-family: 'Open Sans', sans-serif;
 font-size: 0.9em;
@@ -121,7 +104,6 @@ font-weight: 300;
 ul{list-style-type: none;}
 
 /* STYLING */
-<<<<<<< HEAD
 .box{padding-top: 3%; padding-bottom: 3%;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -131,14 +113,6 @@ background-position: center center;
 }
 .odd{background-color: #fff;}
 .even{background-color: #F5F6F7;}
-=======
-#box{padding-top: 5%; padding-bottom: 5%;}
-.zero{background-color: #fff;}
-.one{}
-.two{background-color: #fff;}
-.three{}
-.four{background-color: #fff;}
->>>>>>> origin/master
 
 ::-moz-selection { /* Code for Firefox */
 color: #fff;
@@ -146,7 +120,7 @@ background: #000;
 }
 
 ::selection {
-color: #fff;
+color: #fff; 
 background: #000;
 }
 
@@ -205,42 +179,6 @@ width: 88%;
 max-width: 960px;
 }
 
-.row > div {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-}
-.form-group label {
-    color: black;
-    font-size: 13px;
-    font-weight: 600;
-        
-}
-
-.control-label{
-    
-    
-}
-
-.form-control{
-    height: auto;
-    padding: 20px;
-    border-radius: 3px;
-    box-shadow: none;
-    display: block;
-    width: 70%;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    border: 1px solid #ccc;
-}
-div[class*="teamsection_"] img{
-  float: left;
-  margin-right: 5%;
-  padding-bottom: 50px;
-}
-
 .content{margin-top: 60px; margin-bottom: 60px;}
 
 footer{
@@ -255,35 +193,9 @@ padding-bottom: 60px;
 bottom: 0;
 }
 
-<<<<<<< HEAD
 footer a{color: #000;}
 footer a:hover{opacity: 0.4;}
 
-=======
-
-
-/* CARDS */
-
-.trigger{
-width:100%;
-height:400px;
-background-color:white;
-}
-
-.hover-img, hover-img.hover_effect  {
-background-color:white;
-position: relative;
-width: 200px;
-height: 200px;
-text-align: center;
-font-size: 0;
--webkit-user-select: none;
--webkit-touch-callout: none;
-border-style: solid;
-border-width: 1px;
-border-color: #4595ff;
-}
->>>>>>> origin/master
 
 .footer-left h1{
 font-size: 1.65em;
@@ -437,4 +349,6 @@ transform-origin: 50% 0;
 transform: translateY(0px);
 -moz-transform: translateY(0px);
 -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
+}
+
 }
